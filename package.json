@@ -1,0 +1,40 @@
+{
+  "name": "dojo-starter-node-typescript",
+  "version": "1.0.0",
+  "description": "Starter kit for when participating in a Code Dojo, wanting to hack in TypeScript, using Jest.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/solution.ts",
+    "test": "jest",
+    "tw": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robcthegeek/dojo-starter-node-typescript.git"
+  },
+  "keywords": [
+    "dojo",
+    "coding-dojo",
+    "kata",
+    "javascript",
+    "typescript",
+    "jest"
+  ],
+  "author": "@robcthegeek",
+  "license": "https://github.com/robcthegeek/dojo-starter-node-typescript/blob/main/LICENSE",
+  "bugs": {
+    "url": "https://github.com/robcthegeek/dojo-starter-node-typescript/issues"
+  },
+  "homepage": "https://github.com/robcthegeek/dojo-starter-node-typescript#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.2.0",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.3"
+  }
+}
